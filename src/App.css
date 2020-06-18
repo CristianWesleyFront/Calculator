@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 14px Roboto, sans-serif;
+  background-image: url("https://pressstart.vip/images/uploads/assets/bluemoon.png");
+  background-repeat: no-repeat;
+  background-position: 50% center;
+  background-attachment: fixed;
+  border: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea {
+  font: 400 18px Roboto, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  color: #333;
+  border: 1px solid #dcdce6;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+
+.App {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 120px 60px 60px 60px 60px 60px;
+
+  grid-gap: 2px;
+}
+
+.container .row {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  grid-gap: 2px;
+}
+
+.container .row button {
+  border-radius: 8px;
+}
+
+.container .row1 {
+  grid-template-columns: 246px;
+}
+
+.container .row1 input {
+  height: 118px;
+  font-size: 48px;
+  font-weight: 300px;
+  text-align: right;
+
+  color: #4d4d4d;
+}
+
+.container .row6 {
+  grid-template-columns: 120px 60px 60px;
+}
+.container .row6 .button {
+  margin-left: 2px;
+}
+
+.container .row6 .button:first-child {
+  width: 122px;
+  margin-left: 0px;
+}
