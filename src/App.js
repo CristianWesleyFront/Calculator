@@ -107,7 +107,7 @@ function App() {
 
       if (key === "Enter") key = "=";
 
-      if (/\d/.test(key)) {
+      if (/^[0-9]+$/.test(key)) {
         event.preventDefault();
         inputDigit(parseInt(key, 10));
       } else if (key in CalculatorOperations) {
